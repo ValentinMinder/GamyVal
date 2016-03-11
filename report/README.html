@@ -1,0 +1,794 @@
+<!DOCTYPE html><html>
+
+<head>
+<meta charset="utf-8">
+<title>README</title>
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+</head>
+<body>
+<h1 id="toc_0">Project Report : AMT - GamyVal</h1>
+
+<h2 id="toc_1">Administrative information</h2>
+
+<h3 id="toc_2">Team</h3>
+
+<table>
+<thead>
+<tr>
+<th>Last name, first name</th>
+<th>Github ID</th>
+<th>Main role in the project</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Minder, Valentin</td>
+<td><a href="https://github.com/ValentinMinder">ValentinMinder</a></td>
+<td>&quot;everything&quot;</td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="toc_3">Tasks realized by the different team members</h3>
+
+<p>Not relevant (solo project).</p>
+
+<h2 id="toc_4">Introduction</h2>
+
+<p>This document is a description of the work done in the AMT project about Gamification, using Java EE technologies, following by distance the AMT class (multi-tiers applications) from HEIG with Mr. Liechti, in 2015/2016.</p>
+
+<h2 id="toc_5">User Guide</h2>
+
+<h3 id="toc_6">Environment</h3>
+
+<p>The project assumes you have a working environement, with minimal config:</p>
+
+<ul>
+<li>database access (tested with mysql 5.5.33)</li>
+<li>optionnally, a phpMyAdmin access (tested with Mamp and phpMyAdmin 4.0)</li>
+<li>glassfish server (4.1, tested with 4.1.1)</li>
+<li>Java EE (v.7)</li>
+<li>an IDE to launch and deploy (Netbeans 8.0 complete edition, tested with 8.1)</li>
+<li>a browser (tested with Chrome 48.0)</li>
+<li>a Http client capable of sending and recieving custom http request and response to test the REST api (tested with <a href="https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo">Advanced REST client</a>, a Chrome extension)</li>
+</ul>
+
+<p>The connection to the datasource (<code>jdbc/GamYDS</code> to define in glassfish, within <code>mysql_GamY_rootPool</code> connection Pool) is assuming the mysql default configuration.</p>
+
+<ul>
+<li>datasource: <code>jdbc/GamYDS</code></li>
+<li>user: <code>root</code></li>
+<li>password: <code>root</code></li>
+<li>port: <code>3306</code></li>
+<li>database: <code>AMTDatabase</code></li>
+<li>url: </li>
+</ul>
+
+<div><pre><code class="language-none">jdbc:mysql://localhost:3306/AMTDatabase?zeroDateTimeBehavior=convertToNull</code></pre></div>
+
+<p>Configuration in glassfish properties:
+<a href="localhost:4848/common/index.jsf">localhost:4848/common/index.jsf</a>
+<img src="img/000-config.png" alt="config"></p>
+
+<h3 id="toc_7">Fixing glassfish 4.1.1</h3>
+
+<p>If you have updated glassfish from 4.1 to 4.1.1 (or you just reinstalled the tools), working with glassfish 4.1.1 <em>you MAY encounter this error</em> when using some of the Webservices, like the Rest Api or other functions.</p>
+
+<div><pre><code class="language-none">StandardWrapperValve[javax.ws.rs.core.Application]: Servlet.service() for servlet javax.ws.rs.core.Application threw exception
+java.lang.NoClassDefFoundError: Could not initialize class org.eclipse.persistence.jaxb.BeanValidationHelper</code></pre></div>
+
+<p>Make sure glassfish is stopped and fix it the way it is suggested here (it&#39;s a <em>&#39;dirty&#39;</em> hack but it works).
+<a href="https://java.net/jira/browse/GLASSFISH-21440?focusedCommentId=390331&amp;page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-390331">https://java.net/jira/browse/GLASSFISH-21440</a></p>
+
+<ul>
+<li>Identify where glassfish is installed on your system (example is given on MacOSX)</li>
+</ul>
+
+<div><pre><code class="language-none">cd /Applications/NetBeans/glassfish-4.1.1/glassfish/modules/</code></pre></div>
+
+<ul>
+<li>unjar the <code>org.eclipse.persistence.moxy.jar</code> file</li>
+</ul>
+
+<div><pre><code class="language-none">jar xf org.eclipse.persistence.moxy.jar</code></pre></div>
+
+<ul>
+<li>open the <code>META-INF/MANIFEST.MF</code> file (use any editor that you like: vi, nano, gedit, ...)</li>
+</ul>
+
+<div><pre><code class="language-none">gedit org.eclipse.persistence.moxy/META-INF/MANIFEST.MF</code></pre></div>
+
+<ul>
+<li>search for <code>Import-package :</code> and add the following at the end of it (it should end with <code>org.xml.sax;resolution:=optional</code>)</li>
+</ul>
+
+<div><pre><code class="language-none">,org.xml.sax.helpers,javax.xml.parsers;resolution:=optional,javax.naming;resolution:=optional</code></pre></div>
+
+<ul>
+<li>jar back the <code>org.eclipse.persistence.moxy.jar</code> file</li>
+</ul>
+
+<div><pre><code class="language-none">jar cvf org.eclipse.persistence.moxy.jar org.eclipse.persistence.moxy</code></pre></div>
+
+<ul>
+<li>restart glassfish 4.1.1 and enjoy the hack.</li>
+</ul>
+
+<h3 id="toc_8">How to execute and access the application</h3>
+
+<p>To execute the application, you may follow these steps:</p>
+
+<ul>
+<li>make sure you have a running mysql server</li>
+<li>in glassfish, make sure you have configured the datasource </li>
+<li>Open Netbeans (it was tested with this IDE but nothing is against another one)</li>
+<li>click open existing project</li>
+<li>search for the the pom.xml, it imports the project</li>
+<li>if necessary, click clean &amp; build</li>
+<li>click run: the application should be deployed (it will run glassfish if it was not running before)</li>
+</ul>
+
+<p>To access the application, mainly the user the User UI Interface, open any browser and point to the following address. </p>
+
+<p><a href="http://localhost:8080/GamyVal">http://localhost:8080/GamyVal</a></p>
+
+<p>The usage of the UI should be intuitive. See the design section for more details.</p>
+
+<h3 id="toc_9">How to use the application</h3>
+
+<p>The application is divided into 2 parts</p>
+
+<ul>
+<li>the user UI, accessible from any browser</li>
+<li>the REST api for third-party developpers</li>
+</ul>
+
+<p>The usage of the UI should be quite intuitive. It allows the following operations:</p>
+
+<ul>
+<li>account creation &amp; modification</li>
+<li>login &amp; logout</li>
+<li>see the stats of the service (number of accounts, number of applications, number of end user created)</li>
+<li>launch of a new app </li>
+</ul>
+
+<p>Rules for password creation and modification:</p>
+
+<ul>
+<li>at least 10 characters</li>
+<li>at least one lower case letter (<code>a-z</code>)</li>
+<li>at least one upper case letter (<code>A-Z</code>)</li>
+<li>at least one digit (<code>0-9</code>)</li>
+<li>at least one other character, that is not of the previous categories (ponctuation <code>:.-!</code>, symbols <code>$£§°&amp;#</code>, diacritiques <code>àéèê</code>, etc) </li>
+</ul>
+
+<p>The REST api allows developpers of third-party app to send requests to the application using Http request and replies, with JSON objects when applicable. It is accessible at the following URL, where entrypoint correspond to the REST function exposed. See the design section for more details.</p>
+
+<p><a href="http://localhost:8080/GamyVal/api/v1/entrypoint">http://localhost:8080/GamyVal/api/v1/entrypoint</a></p>
+
+<p><code>v1</code> stands for the version 1. If you should deploy a new version of the API, you will deploy it on <code>v2</code> and still support requests to the old API for a while, giving time to your clients to upgrade.</p>
+
+<h3 id="toc_10">How to update, build and deploy the application</h3>
+
+<p>In your IDE (like Netbeans), modify your code, hit clean and build, hit run, and the application is deployed in glassfish, automatically.</p>
+
+<h3 id="toc_11">How to run the automated test procedure</h3>
+
+<p>Not relevant in this context.</p>
+
+<h2 id="toc_12">Design</h2>
+
+<h3 id="toc_13">System overview</h3>
+
+<p>The first part, including Role, Account, ApiKey, Application and EndUser was strongly suggested by the specifications. The following is then defined by the author.</p>
+
+<p>In the context of their app, the developpers will define Tasks. A task might be &quot;<em>upvoting</em>&quot; and worth 1 point, or &quot;<em>answering a question</em>&quot; and worth 5 points.</p>
+
+<p>Then, every time a enduser performs one of these task, it&#39;s a new Event: a particular user for a particular task.</p>
+
+<p>The ranks are then defined for every application based on the number of points acquired.</p>
+
+<p><img src="img/schema.png" alt="schema"></p>
+
+<h3 id="toc_14">Gamification feature</h3>
+
+<p>The gamification was developped arround <em>RANK</em>. </p>
+
+<p>Rank is based solely on score (number of points acquired through tasks). Each rank is defined with a certain level of points. Every user then has the rank that is immediately lower than its score. </p>
+
+<p>An example could be Rank: Newbie with 10 points, Rank: Challenger with 100 points, Rank: Expert with 1000 points. A user with 13 points would be of rank Newbie, and the next step for him would be rank Challenger, but he is still missing 87 points to reach the next rank.</p>
+
+<p>Finally, the user can retrieve its score, current rank, the next rank to reach and the number of points missing to reach the next rank.</p>
+
+<h3 id="toc_15">User interface</h3>
+
+<p>The UI allows the admin of an app to create an account (register), login and logout, modify the details of the account and create new application. </p>
+
+<p>When logged in, we can see the stats of the system (number of accounts, number of application and number of end-user created the last 30 days).</p>
+
+<h3 id="toc_16">REST API</h3>
+
+<p>Every request is to be prefixed by </p>
+
+<div><pre><code class="language-none">http://localhost:8080/GamyVal/api/v1</code></pre></div>
+
+<p>And this header when their is provided content (post and put)</p>
+
+<div><pre><code class="language-none">Content-Type: application/json</code></pre></div>
+
+<h4 id="toc_17">Entry points</h4>
+
+<div><pre><code class="language-none">/account
+/application
+/enduser
+/event
+/rank
+/task </code></pre></div>
+
+<h4 id="toc_18">Full REST API on /application</h4>
+
+<p>A full Api may provide:</p>
+
+<ul>
+<li>GET and POST on the collection (/application). GET returns the whole collection while POST create a new element in the collection.</li>
+<li>GET, PUT and DELETE on the elements (/application/id). GET retrieve the element, PUT updates all (some of) the fields, while DELETE removes the element. </li>
+</ul>
+
+<p>The REST API on /application provides the whole set of CRUD operation to demonstrate its usage.</p>
+
+<ul>
+<li>creation of a new app (post, the whole item including the apikey is sent back)</li>
+</ul>
+
+<div><pre><code class="language-none">POST /application
+{ &quot;email&quot;:&quot;me@me.com&quot;, &quot;name&quot;:&quot;New App&quot;, &quot;descr&quot;:&quot;new&quot;}</code></pre></div>
+
+<ul>
+<li>retrieve the list of apps (get)</li>
+</ul>
+
+<div><pre><code class="language-none">GET /application</code></pre></div>
+
+<ul>
+<li>edition of an existing app (put)</li>
+</ul>
+
+<div><pre><code class="language-none">PUT /application/apikey
+{ &quot;name&quot;:&quot;FirstApp&quot;, &quot;descr &quot;:&quot;yes&quot;}</code></pre></div>
+
+<ul>
+<li>deletion of an existing app (delete)</li>
+</ul>
+
+<div><pre><code class="language-none">DELETE /application/apikey</code></pre></div>
+
+<ul>
+<li>retrieve the details of a single app (get)</li>
+</ul>
+
+<div><pre><code class="language-none">GET /application/apikey</code></pre></div>
+
+<h4 id="toc_19">The &quot;rest&quot; of the API ;)</h4>
+
+<p>The other entry points dont offer all of the functions, only those useful to demonstrate the usage of the app.</p>
+
+<ul>
+<li>retrieve the list of accounts (without the passwords with the help of DTO)</li>
+</ul>
+
+<div><pre><code class="language-none">GET /account</code></pre></div>
+
+<ul>
+<li>retrieve the list of accounts (with the passwords without the help of DTO, to demonstrate possible security issues about private data leakage)</li>
+</ul>
+
+<div><pre><code class="language-none">GET /account/insecure</code></pre></div>
+
+<ul>
+<li>creation of end-user (and it returns the enduser entity with userID, that should be kept by dev for future use)</li>
+</ul>
+
+<div><pre><code class="language-none">POST /enduser?apikey={apikey}</code></pre></div>
+
+<ul>
+<li>see the end-users, without the need of the api key (/!\ all the details &amp; all the apps: this is demonstration of a security issue about api usage authentication !)</li>
+</ul>
+
+<div><pre><code class="language-none">GET /enduser</code></pre></div>
+
+<ul>
+<li>creation of task (it returns the task entity with its taskID)</li>
+</ul>
+
+<div><pre><code class="language-none">POST /task?apikey={apikey}
+{ &quot;name&quot;:&quot;question&quot;, &quot;score&quot;:12 }</code></pre></div>
+
+<ul>
+<li>simulation of events: end-user does a task (returns nothing)</li>
+</ul>
+
+<div><pre><code class="language-none">POST /event?apikey={apikey}&amp;userID={userID}&amp;taskID={taskID}</code></pre></div>
+
+<ul>
+<li>creation of ranks</li>
+</ul>
+
+<div><pre><code class="language-none">POST /rank?apikey={apikey}
+{ &quot;name&quot;:&quot;newbie&quot;, &quot;score&quot;:10}</code></pre></div>
+
+<ul>
+<li>see all the ranks (unordered)</li>
+</ul>
+
+<div><pre><code class="language-none">GET /rank?apikey={apikey}</code></pre></div>
+
+<ul>
+<li>see all the ranks (ORDERED, to demonstrate named query usage)</li>
+</ul>
+
+<div><pre><code class="language-none">GET /rank/ordered?apikey={apikey}</code></pre></div>
+
+<ul>
+<li>demonstration of the state of the enduser</li>
+</ul>
+
+<div><pre><code class="language-none">GET /enduser/details?apikey={apikey}&amp;userID={userID}</code></pre></div>
+
+<ul>
+<li>answer for the details of the end user</li>
+</ul>
+
+<div><pre><code class="language-none">{
+  &quot;userID&quot; : &quot;3fef24e87daba8a7&quot;,
+  &quot;score&quot; : 10,
+  &quot;rank&quot; : &quot;newbie&quot;,
+  &quot;nextRank&quot; : &quot;master&quot;,
+  &quot;nextRankMissing&quot; : 25
+}</code></pre></div>
+
+<p><img src="img/010-enduser.png" alt="REST demo"></p>
+
+<h3 id="toc_20">Design patterns</h3>
+
+<p>MVC for the web pages (jsp pages - Servlet).</p>
+
+<p>DAO for the Entity - DTO - Rest Resource.</p>
+
+<h2 id="toc_21">Implementation</h2>
+
+<h3 id="toc_22">Package structure</h3>
+
+<div><pre><code class="language-none">src.javach.heigvd.amt.gamyval -&gt; entry point
+|models.entities -&gt; entity (java pojo)
+|restapi. -&gt; REST content
+        |dtos -&gt; DTO  (Data transfer object)
+        |ressources -&gt; REST services
+|service.daos -&gt; DAO and local DAO interface (data access object)
+|webapp. -&gt; web pages controllers
+       |controllers -&gt; Servlet, entry point for web services and pages
+       |filters -&gt; Servlet used for authentification verification</code></pre></div>
+
+<p>Jsp Web pages</p>
+
+<div><pre><code class="language-none">web. -&gt; web pages
+   |index.jsp -&gt; index page
+   |static -&gt; js and css style documents
+   |WEB-INF. -&gt; protected content
+           |web.xml -&gt; description of servelt available and path
+           |pages -&gt; all the jsp pages (views)</code></pre></div>
+
+<h3 id="toc_23">Structure of the code</h3>
+
+<p>For every Entity of the UML was defined a Jpa Entity for persistante, which was simples pojo&#39;s, with Java EE annotation for associations.</p>
+
+<p>Then most of them turn into DAO (with their interface DAOLocal), at least all those who needed to be created by the API (call to <code>create</code>) or who provide business method (like Rank provides <code>findAllOrdered</code> and <code>findGreaterRank</code>).</p>
+
+<p>The most used ones were also turned into one or several DTO&#39;s, either for creation or for transmission (see next section for details).</p>
+
+<p>Finally services were provided for certain entities, to perform some or all of the CRUD operation (Create, Read, Update, Delete). See the REST API section for details.</p>
+
+<h3 id="toc_24">Selected aspects</h3>
+
+<h4 id="toc_25">DTO over Entity</h4>
+
+<p>Some of the Entities were turned into DTO&#39;s, for the following goals.</p>
+
+<ul>
+<li><p>creation of Entity: when the dev creates an entity with the Rest Api, they might not know some of the fields that are specific to our implementation. An example mighe be the TaskNewDTO: the dev provides a name and points, but cannot provide the taskID that will be created by the app. Therefore a real Entity cannot be constructed yet. So the dev data will arrive in a DTO that contains the data provided by the dev, and the app will create the real Entity based on the DTO and generated data.</p></li>
+<li><p>transmission of light-weight data: it does not copy the whole hierarchy but only the part that you choose. In case of an application, you dont want the whole structure of enduser and ranks to be replicated. This is used in ApplicationSummaryDTO: a real application consist of a list of Rank, a list of Task, etc. But we are just interested in the name and the apikey, so we created a DTO to send reduced data.</p></li>
+<li><p>transmission of secured and limited data: it can help to protect sensitive data that are contained in the Entity that should never be sent. This is used in AccountSummaryDTO: only names and email are sent, without the password. If we would send the Account object, we would send the password credentials with it, which is a huge security flaw.</p></li>
+<li><p>transmission of computed data: sometimes you want to send some aggregated or processed data. So you will perform a few computations and then send the results. This is used in EndUserSummaryDTO to send the score, the rank, the next rank and the missing points to the next rank. All these data are not stored but computed every time an end user ask for the statistics about his account.</p></li>
+<li><p>sometimes it looks just &quot;useless&quot;: the RankDTO is exactly the same as the Rank Entity. You might thought this is an error or a misunderstanding of the concept of DTO&#39;s and Entities. Much likely the code evolved and at the some point we needed a DTO, maybe because Rank Entity was containing some private or computed information, that has been removed afterwards.</p></li>
+</ul>
+
+<h2 id="toc_26">Demo</h2>
+
+<p>This is a short description of what is demonstrable.</p>
+
+<p>On the UI:</p>
+
+<ul>
+<li>security filter of home page (the home page is not accessible)</li>
+<li>new account creation using the form</li>
+<li>password quality verification (confirmation, length, content)</li>
+<li>auto-login when sign-up</li>
+<li>login &amp; log-out</li>
+<li>application details on home page</li>
+<li>account edition of name/password</li>
+<li>creation of new app within the UI</li>
+</ul>
+
+<p>On the REST api: see the list of Rest Api description.</p>
+
+<p>On the UI (with images)</p>
+
+<ul>
+<li><p>security filter of home page (the home page is not accessible)
+<img src="img/001-home-secured.png" alt="REST demo"></p></li>
+<li><p>new account creation using the form
+<img src="img/002-registration.png" alt="REST demo"></p></li>
+<li><p>auto-login when sign-up
+<img src="img/003-registered.png" alt="REST demo"></p></li>
+<li><p>application details on home page
+<img src="img/004-home.png" alt="REST demo"></p></li>
+<li><p>account edition of name/password
+<img src="img/005-edit.png" alt="REST demo"></p></li>
+<li><p>creation of new app within the UI
+<img src="img/006-new.png" alt="REST demo"></p></li>
+<li><p>creation of new app within the UI: success
+<img src="img/007-new-success.png" alt="REST demo"></p></li>
+</ul>
+
+<h2 id="toc_27">Testing and validation</h2>
+
+<p>Not relevant.</p>
+
+<h2 id="toc_28">Known Issues</h2>
+
+<h3 id="toc_29">What&#39;s next ?</h3>
+
+<p>The following parts were not completed.</p>
+
+<ul>
+<li><p>part 1: continued UI for app management</p>
+
+<ul>
+<li>change app details</li>
+<li>to start, stop, delete apps</li>
+<li>see users by app, and use pagination </li>
+<li>However, the core usage of the UI, the security features and the MVC separation were demonstrated.</li>
+</ul></li>
+<li><p>tests:</p>
+
+<ul>
+<li>Extensive testing with classic Java Tests</li>
+<li>automated user acceptance tests with Selenium </li>
+<li>performance and load testing with JMeter</li>
+</ul></li>
+<li><p>part 2: </p>
+
+<ul>
+<li>the REST api is not fully supported. All collections should support get and post, while all single items should support get, put and delete. </li>
+<li>The reply should be more clear if the request was successful, and if yes return the ID of the created item. </li>
+<li>It should also fails nicely when an error occurs (distinguish the different failures, and don&#39;t provide the client too much information).</li>
+<li>It should support a better authentication and security feature to avoid leakage (see the rest api description for an example).</li>
+<li>However, the core functionnalities were done and all of the CRUD operation were demonstrated at least once. </li>
+</ul></li>
+<li><p>part 3: this part was not developped, it was out of scope of a solo project.</p>
+
+<ul>
+<li>the api provided is very simple and allows a unique usage. A real api should be more flexible and adaptable to (almost) every client needs.</li>
+</ul></li>
+</ul>
+
+<h2 id="toc_30">Conclusion</h2>
+
+<p>As we can see the project was not finished completely but the part that was done proved most of the functionnalities and demonstrate the usage and comprehension of the subject.</p>
+
+<p>While is working for the case it was thought, the project is not really modular for any real and complex gamification use for a real client. This is more like a proof-of-concept: at the end we can see the gamification working from end-to-end.</p>
+
+<p>Doing this project alone and away from the lectures was a real challenge, both in terms of workload and knowledge. It wouldn&#39;t have been possible without reading a lot of documentation by myself and a lot of personnal work.</p>
+
+
+</body>
+
+</html>
